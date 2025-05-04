@@ -4,29 +4,54 @@
 ---
 
 ### AIM  
-To write a Python code to create a class for a person with a parameterized constructor, which will take the `name` and `userid` of the person as parameters and print the `userid` of the person.
-
+To write a  python program using class to perform addition of two numbers using parameterised constructor.
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Define a `person` class.  
-3. The `person` class should have a parameterized `__init__` method that accepts two parameters: `name` and `userid`.  
-4. Inside the `__init__` method, assign the `name` to `self.name` and the `userid` to `self.userid`.  
-5. Print the `self.userid`.  
-6. Prompt the user to enter their `name` (string) and `userid`.  
-7. Create an instance `s1` of the `person` class by passing the entered `name` and `userid` to the constructor.  
-8. Terminate the program.
+1. **Start**
+2. Define a class called `Addition`
+3. Inside the class, define:
+
+   * A constructor method to initialize two numbers (`num1` and `num2`)
+   * A method `calculate()` to compute the sum of the two numbers
+   * A method `display()` to print the numbers and their sum
+4. Take two integer inputs from the user
+5. Create an object of the `Addition` class using the inputs
+6. Call the `calculate()` method to perform addition
+7. Call the `display()` method to show the result
+8. **End*
 
 ---
 
 ### PROGRAM
 
 ```
+Reg no-212223070007
+Nmae-Gopinath G
 
+class Addition:
+    first=0
+    second=0
+    answer=0
+    def __init__(self,num1,num2):
+        self.num1=num1
+        self.num2=num2
+    def display(self):
+        print("First number = "+str(self.num1))
+        print("Second number = "+str(self.num2))
+        print("Addition of two numbers = "+str(self.answer))
+    def calculate(self):
+        self.answer=self.num1+self.num2
+x=int(input())
+y=int(input())
+obj = Addition(x,y)
+obj.calculate()
+obj.display()
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/5ea7dbf5-b56f-4d22-8080-d4e3d2f0d328)
 
 ### RESULT
+Thus the python program using class to perform addition of two numbers using parameterised constructor wass executed successfully
